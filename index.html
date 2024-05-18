@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col items-center justify-center w-full min-h-[100vh]">
+
+  <div class="program flex flex-col items-start w-[700px] h-fit bg-white p-[30px]">
+    <span class="title mb-[20px]">Contact US</span>
+    <div class="form grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 w-full gap-2">
+      <div class="info_form flex flex-col items-start gap-2">
+        <label for="fname">First Name <sup class="text-red-500">*</sup></label>
+        <input type="text" id="fname">
+      </div>
+      <div class="info_form flex flex-col items-start gap-2">
+        <label for="lname">Last Name <sup class="text-red-500">*</sup></label>
+        <input type="text" id="lname">
+      </div>
+    </div>
+    <div class="form grid grid-cols-1 w-full my-3">
+      <div class="info_form flex flex-col items-start gap-2">
+        <label for="email">Email Address <sup class="text-red-500">*</sup></label>
+        <input type="email" id="email">
+      </div>
+    </div>
+    <div class="flex flex-col items-start w-full gap-2">
+      <span class="span_ident">Quary Type</span>
+      <div class="cont grid grid-cols-2 gap-2 w-full">
+        <div class="card">
+          <!-- <input type="checkbox"> -->
+          <div class="circle"></div>
+          <label for="">Generarl Enquary</label>
+        </div>
+        <div class="card">
+          <div class="circle"></div>
+          <label for="">Support Request</label>
+        </div>
+      </div>
+    </div>
+    <div class="form grid grid-cols-1 w-full my-3">
+      <div class="info_form flex flex-col items-start gap-2">
+        <label for="message">Message <sup class="text-red-500">*</sup></label>
+        <input type="text" id="message">
+      </div>
+    </div>
+    <div class="rules flex flex-row items-center gap-2 my-[30px]">
+      <input type="checkbox" id="checkRules">
+      <label for="">I accept the terms and conditions</label>
+    </div>
+    <button class="btn_submit">Submit</button>
+    <div class="successMess none flex flex-col items-start w-[400px] py-[25px] px-[20px] gap-2 absolute top-[10px] left-[40%] rounded-xl" id="success">
+      <div class="flex flex-row items-center gap-2">
+        <img src="assets/images/icon-success-check.svg" alt="">
+        <span class="sentMessage">Message Sent</span>
+      </div>
+      <p class="para_thanks">Thanks For completing The Form , we'll be in touch soon</p>
+      <i class="fa-solid fa-close IconCloseMenu"></i>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

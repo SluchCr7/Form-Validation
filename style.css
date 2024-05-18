@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family: MyFont;
+    src: url(./assets/fonts/Karla-Italic-VariableFont_wght.ttf);
+}
+body{
+    /* font-family: MyFont !important; */
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Green);
+}
+html{
+    font-size: 16px;
+}
+:root{
+/* ### Primary */
+
+--Light-Green: hsl(148, 38%, 91%);
+--Green: hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 56%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Medium-Grey: hsl(186, 15%, 59%);
+--Dark-Grey: hsl(187, 24%, 22%);
+}
+.title{
+    color: var(--Dark-Grey);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.info_form label , .span_ident , .card label , .rules label{
+    color: var(--Dark-Grey);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.info_form input  , .card{   
+    padding: 10px;
+    border: 1px solid var(--Dark-Grey);
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    transition: .7s ease;
+}
+.info_form input:hover{
+    border-color: var(--Green);
+}
+.info_form input:focus{
+    border-color: var(--Green);
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 15px 10px 15px 20px !important;
+}
+#message{
+    height: 150px;
+}
+
+.btn_submit{
+    background-color: var(--Green);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--Medium-Grey);
+}
+.activeCircle{
+    background-color: var(--Medium-Grey);
+}
+.borderError{
+    border-color: var(--Red) !important;
+}
+.sentMessage{
+    color: var(--White);
+    font-family: 700;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+.para_thanks{
+    color: var(--Medium-Grey);
+    font-size: .8rem;
+}
+.successMess{
+    background-color: var(--Dark-Grey);
+    border: none;
+    outline: none;
+}
+.none{
+    display: none !important;
+}
+.IconCloseMenu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .program{
+        /* margin: 1rem; */
+        width: 90% !important;
+    }
+}
